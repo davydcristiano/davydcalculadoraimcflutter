@@ -10,9 +10,7 @@ Essa atividade foi realizada durante o desafio do "Bootcamp Santander 2023 - Mob
 
 ## Video de apresentação
 
-<video width="420" height="340" controls>
-  <source src="assets/videos/video2.mp4" type="video/mp4">
-</video>
+https://github.com/davydcristiano/davydcalculadoraimcflutter/assets/53920878/4d09f98c-e034-4933-8331-ce1aaf5c9d26
 
 ## Linguagens
 <br>
