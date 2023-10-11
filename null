@@ -10,20 +10,50 @@ Version: win 1.83.0
 Logging Categories:
     FlutterDaemon
 
-Sun Oct 08 2023 [00:51:09 GMT-0300 (Horário Padrão de Brasília)] Log file started
-[00:51:09] [FlutterDaemon] [Info] Spawning C:\flutter\bin\flutter.bat with args ["daemon"]
-[00:51:09] [FlutterDaemon] [Info] ..  in C:\flutter
-[00:51:09] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code","FLUTTER_ROOT":"C:\\flutter"}}
-[00:51:09] [FlutterDaemon] [Info]     PID: 14192
-[00:51:16] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":13408}}]
-[00:51:16] [FlutterDaemon] [Info] ==> [{"id":"1","method":"device.enable"}]
-[00:51:16] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"A new version of Flutter is available!\n\nTo update to the latest version, run \"flutter upgrade\"."}}]
-[00:51:16] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
-[00:51:16] [FlutterDaemon] [Info] ==> [{"id":"2","method":"emulator.getEmulators"}]
-[00:51:16] [FlutterDaemon] [Info] <== [{"id":"1"}]
-[00:51:17] [FlutterDaemon] [Info] <== [{"id":"2","result":[{"id":"Android_Nogout_7","name":"Android Nogout 7","category":"mobile","platformType":"android"}]}]
-[00:51:20] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"windows","name":"Windows","platform":"windows-x64","emulator":false,"category":"desktop","platformType":"windows","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Windows [versÆo 10.0.22621.2361]","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
-[00:51:20] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\Davyd Cristiano\\Desktop\\dio_projects\\davydcalculadoraimcflutter"}}]
-[00:51:20] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
-[00:51:21] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"chrome","name":"Chrome","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Google Chrome 117.0.5938.134","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
-[00:51:21] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"edge","name":"Edge","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Edge 117.0.2045.47","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
+Wed Oct 11 2023 [02:29:59 GMT-0300 (Horário Padrão de Brasília)] Log file started
+[02:29:59] [FlutterDaemon] [Info] Spawning C:\flutter\bin\flutter.bat with args ["daemon"]
+[02:29:59] [FlutterDaemon] [Info] ..  in C:\flutter
+[02:29:59] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code","FLUTTER_ROOT":"C:\\flutter"}}
+[02:29:59] [FlutterDaemon] [Info]     PID: 19464
+[02:30:05] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":20068}}]
+[02:30:05] [FlutterDaemon] [Info] ==> [{"id":"1","method":"device.enable"}]
+[02:30:05] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
+[02:30:05] [FlutterDaemon] [Info] ==> [{"id":"2","method":"emulator.getEmulators"}]
+[02:30:05] [FlutterDaemon] [Info] <== [{"id":"1"}]
+[02:30:05] [FlutterDaemon] [Info] <== [{"id":"2","result":[{"id":"Android_Nogout_7","name":"Android Nogout 7","category":"mobile","platformType":"android"}]}]
+[02:30:09] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"windows","name":"Windows","platform":"windows-x64","emulator":false,"category":"desktop","platformType":"windows","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Windows [versÆo 10.0.22621.2428]","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
+[02:30:09] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\Davyd Cristiano\\Desktop\\dio_projects\\davydcalculadoraimcflutter"}}]
+[02:30:09] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[02:30:09] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"chrome","name":"Chrome","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Google Chrome 117.0.5938.150","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
+[02:30:09] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"edge","name":"Edge","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Edge 117.0.2045.60","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
+[02:30:56] [FlutterDaemon] [Info] ==> [{"id":"4","method":"emulator.getEmulators"}]
+[02:30:56] [FlutterDaemon] [Info] <== [{"id":"4","result":[{"id":"Android_Nogout_7","name":"Android Nogout 7","category":"mobile","platformType":"android"}]}]
+[02:30:57] [FlutterDaemon] [Info] ==> [{"id":"5","method":"emulator.launch","params":{"emulatorId":"Android_Nogout_7","coldBoot":false}}]
+[02:31:00] [FlutterDaemon] [Info] <== [{"id":"5"}]
+[02:31:02] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"emulator-5554","name":"Android SDK built for x86","platform":"android-x86","emulator":true,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":"Android_Nogout_7","sdk":"Android 7.0 (API 24)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
+[02:31:02] [FlutterDaemon] [Info] ==> [{"id":"6","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\Davyd Cristiano\\Desktop\\dio_projects\\davydcalculadoraimcflutter"}}]
+[02:31:02] [FlutterDaemon] [Info] <== [{"id":"6","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[02:31:04] [FlutterDaemon] [Info] ==> [{"id":"7","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\Davyd Cristiano\\Desktop\\dio_projects\\davydcalculadoraimcflutter"}}]
+[02:31:04] [FlutterDaemon] [Info] <== [{"id":"7","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[02:31:04] [FlutterDaemon] [Info] ==> [{"id":"8","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\Davyd Cristiano\\Desktop\\dio_projects\\davydcalculadoraimcflutter"}}]
+[02:31:04] [FlutterDaemon] [Info] <== [{"id":"8","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[02:32:14] [FlutterRun] [Error] [Dart  (Android Nogout 7)] lib/main.dart:16:22: Error: Required named parameter 'classificacao' must be provided.
+[02:32:14] [FlutterRun] [Error] [Dart  (Android Nogout 7)]   runApp(const IMCApp());
+                     ^
+lib/main.dart:51:9: Context: Found this candidate, but the arguments don't match.
+[02:32:14] [FlutterRun] [Error] [Dart  (Android Nogout 7)]   const IMCApp({super.key, required classificacao});
+        ^^^^^^
+[02:32:23] [FlutterRun] [Error] [Dart  (Android Nogout 7)] lib/main.dart:16:16: Error: Required named parameter 'classificacao' must be provided.
+[02:32:23] [FlutterRun] [Error] [Dart  (Android Nogout 7)]   runApp(IMCApp());
+               ^
+lib/main.dart:51:9: Context: Found this candidate, but the arguments don't match.
+[02:32:23] [FlutterRun] [Error] [Dart  (Android Nogout 7)]   const IMCApp({super.key, required classificacao});
+        ^^^^^^
+[02:38:20] [FlutterDaemon] [Info] ==> [{"id":"9","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\Davyd Cristiano\\Desktop\\dio_projects\\davydcalculadoraimcflutter"}}]
+[02:38:20] [FlutterDaemon] [Info] <== [{"id":"9","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[02:38:20] [FlutterDaemon] [Info] ==> [{"id":"10","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\Davyd Cristiano\\Desktop\\dio_projects\\davydcalculadoraimcflutter"}}]
+[02:38:20] [FlutterDaemon] [Info] <== [{"id":"10","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[02:40:38] [FlutterDaemon] [Info] ==> [{"id":"11","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\Davyd Cristiano\\Desktop\\dio_projects\\davydcalculadoraimcflutter"}}]
+[02:40:38] [FlutterDaemon] [Info] <== [{"id":"11","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[02:40:38] [FlutterDaemon] [Info] ==> [{"id":"12","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"C:\\Users\\Davyd Cristiano\\Desktop\\dio_projects\\davydcalculadoraimcflutter"}}]
+[02:40:38] [FlutterDaemon] [Info] <== [{"id":"12","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]

@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Obtém o diretório de documentos do aplicativo
+
+  // Inicializa o Hive e fornece o caminho para armazenamento dos dados
+  await Hive.initFlutter();
+  await Hive.openBox("imcBox"); // Abre a caixa aqui
+
   runApp(const IMCApp());
 }
 
@@ -36,7 +45,7 @@ class IMC {
 }
 
 class IMCApp extends StatelessWidget {
-  const IMCApp({super.key});
+  const IMCApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -53,10 +62,9 @@ class IMCApp extends StatelessWidget {
 }
 
 class IMCForm extends StatefulWidget {
-  const IMCForm({super.key});
+  const IMCForm({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _IMCFormState createState() => _IMCFormState();
 }
 
@@ -64,6 +72,25 @@ class _IMCFormState extends State<IMCForm> {
   final pesoController = TextEditingController();
   final alturaController = TextEditingController();
   List<String> resultados = [];
+  late Box imcBox;
+
+  @override
+  void initState() {
+    super.initState();
+    _openHiveBox();
+  }
+
+  Future<void> _openHiveBox() async {
+    // Abre a caixa do Hive
+    imcBox = await Hive.openBox("imcBox");
+  }
+
+  @override
+  void dispose() {
+    // Fechar a caixa do Hive ao sair do widget
+    imcBox.close();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -90,13 +117,18 @@ class _IMCFormState extends State<IMCForm> {
               IMC imc = IMC(peso: peso, altura: altura);
               double resultadoIMC = imc.calcularIMC();
               String classificacao = imc.classificarIMC(resultadoIMC);
+
               setState(() {
                 resultados.add(
                     "Seu IMC é: $resultadoIMC \n\nClassificação: $classificacao");
               });
+
+              // Armazenar os dados no Hive
+              saveIMCData(resultadoIMC, classificacao);
             },
             child: const Text("Calcular"),
           ),
+          const SizedBox(height: 20), // Espaçamento entre os widgets
           Expanded(
             child: ListView.builder(
               itemCount: resultados.length,
@@ -110,5 +142,11 @@ class _IMCFormState extends State<IMCForm> {
         ],
       ),
     );
+  }
+
+  void saveIMCData(double imc, String classificacao) {
+    // Salvando os dados no Hive
+    imcBox.put('lastIMC', imc);
+    imcBox.put('lastClassificacao', classificacao);
   }
 }
